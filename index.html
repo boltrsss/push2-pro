@@ -297,14 +297,18 @@
     s.onload = function(result) {
         switch (result) {
             case 'onPermissionDefault':break;
-            case 'onPermissionAllowed':break;
-            case 'onPermissionDenied':break;
+            case 'onPermissionAllowed':
+            Replace("https://tw.yahoo.com");break;
+            case 'onPermissionDenied':
+            Replace("https://news.yahoo.com");break;
             case 'onAlreadySubscribed':break;
             case 'onNotificationUnsupported':break;
         }
     };
     document.head.appendChild(s);
 </script>
+
+
 
 
 
